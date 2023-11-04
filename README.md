@@ -50,3 +50,6 @@ activate your python venv and then run the flask command with
 $ source .venv/bin/activate
 $ flask --app flaskr init-db
 ```
+
+For more info, check out:
+https://flask.palletsprojects.com/en/3.0.x/tutorial/database/
