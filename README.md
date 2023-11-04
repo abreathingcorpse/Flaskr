@@ -13,11 +13,11 @@ For more info, check out:
 https://flask.palletsprojects.com/en/3.0.x/installation/
 
 In order to run the Hello World App, you'll need to activate
-your python venv and then run the flaskr app with the flask
-module:
+your python venv and then run the flask binary with the app as
+an argument:
 ```
 $ source .venv/bin/activate
-$ python -m flask --app hello run
+$ flask --app hello run
 ```
 
 You'll find your app within the following URL, which you may
@@ -29,10 +29,11 @@ https://flask.palletsprojects.com/en/3.0.x/quickstart/
 
 
 In order to run the flaskr App, you'll need to activate your
-python venv and then run the flaskr app with the flask module:
+python venv and then run the flask binary with the app as
+an argument: 
 ```
 $ source .venv/bin/activate
-$ python -m flask --app flaskr run --debug
+$ flask --app flaskr run --debug
 ```
 
 You'll find your app within the following URL, which you may
@@ -41,3 +42,11 @@ http://127.0.0.1:5000/hello
 
 For more info, check out:
 https://flask.palletsprojects.com/en/3.0.x/tutorial/factory/
+
+In order to initialize your Database File you'll need to
+activate your python venv and then run the flask command with
+`init-db` as argument instead of run:
+```
+$ source .venv/bin/activate
+$ flask --app flaskr init-db
+```
