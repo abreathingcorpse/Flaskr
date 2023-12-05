@@ -33,9 +33,9 @@ def register():
         error = None
 
         if not username:
-            error = 'Username is requred.'
+            error = 'Username is required.'
         if not password:
-            error = 'Password is requred.'
+            error = 'Password is required.'
 
         if error is None:
             try:
@@ -49,7 +49,7 @@ def register():
             else:
                 return redirect(url_for("auth.login"))
 
-            flash(error)
+        flash(error)
 
     return render_template('auth/register.html')
 
@@ -75,7 +75,7 @@ def login():
                 session['user_id'] = user['id']
                 return redirect(url_for('index'))
 
-            flash(error)
+        flash(error)
     return render_template('auth/login.html')
 
 @bp.route('/logout')
