@@ -53,3 +53,6 @@ $ flask --app flaskr init-db
 
 For more info, check out:
 https://flask.palletsprojects.com/en/3.0.x/tutorial/database/
+
+You can register an user by going to:
+http://127.0.0.1:5000/auth/register
